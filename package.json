@@ -1,0 +1,14 @@
+{
+    "name": "csv-to-tally",
+    "version": "1.0.0",
+    "description": "electron app csv to tally",
+    "repository": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "electron app.js"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "electron": "^3.0.2"
+    }
+}
