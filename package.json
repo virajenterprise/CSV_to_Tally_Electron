@@ -6,13 +6,29 @@
     "main": "app.js",
     "scripts": {
         "start": "electron app.js",
-        "packager": "electron-packager ./ --platform=win32"
+        "pack":"build --dir",
+        "dist":"build"
     },
+    "author": "Rushirajsinh",
     "license": "ISC",
-    "devDependencies":{
+    "devDependencies": {
         "electron": "^3.0.2",
-        "electron-packager": "^15.4.0"
+        "electron-builder": "^22.13.1"
     },
-    "dependencies": {        
+    "dependencies": {},
+    "build":{
+        "productName":"csv-to-tally",
+        "appId":"csv-to-tally",
+        "win":{
+            "target":["portable"]
+        },
+        "portable":{
+            "artifactName":"csv-to-tally.exe"
+        },
+        "directories":{
+            "output": "electron/output",
+            "app": "electron/app",
+            "buildResources": "electron/buildResources"
+        }
     }
 }
