@@ -9,8 +9,10 @@
         "packager": "electron-packager ./ --platform=win32"
     },
     "license": "ISC",
-    "dependencies": {
+    "devDependencies":{
         "electron": "^3.0.2",
         "electron-packager": "^15.4.0"
+    },
+    "dependencies": {        
     }
 }
